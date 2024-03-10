@@ -1,0 +1,18 @@
+REM Change your AM/PM display to aggles/paggles in Windows - GasStationHotDog
+
+
+DELAY 500
+GUI r
+DELAY 1000
+STRING powershell.exe
+DELAY 1000
+ENTER
+DELAY 1000
+STRING Set-ItemProperty -Path "HKCU:\Control Panel\International" -Name "s1159" -Value "aggles"; Set-ItemProperty -Path "HKCU:\Control Panel\International" -Name "s2359" -Value "paggles"
+ENTER
+DELAY 1000
+STRING taskkill /f /im explorer.exe
+ENTER
+DELAY 1000
+STRING start explorer.exe; taskkill /f /im powershell.exe
+ENTER
