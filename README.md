@@ -1,2 +1,2 @@
 # FlipperStuff
-Ridinl on a dolphin, writing scripts n shit
+Ridin' on a dolphin, writing scripts n shit
